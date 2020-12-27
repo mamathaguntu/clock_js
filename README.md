@@ -1,1 +1,1 @@
-# clock_js
+# Create an analog clock using JS

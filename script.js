@@ -1,6 +1,6 @@
-const HOURHAND = document.querySelector("#hour");
-const MINUTEHAND = document.querySelector("#minute");
-const SECONDHAND = document.querySelector("#second");
+const HOURHAND = document.querySelector('#hour');
+const MINUTEHAND = document.querySelector('#minute');
+const SECONDHAND = document.querySelector('#second');
 
 
 
@@ -11,7 +11,7 @@ function runClock() {
   let hr = currentDate.getHours();
   let min = currentDate.getMinutes();
   let sec = currentDate.getSeconds();
-  console.log("Hours: " + hr + " Minutes: " + min + " Seconds: " + sec);
+  console.log('Hours: ' + hr + ' Minutes: ' + min + ' Seconds: ' + sec);
 
   // use the current date hours , minutes and seconds to get the hands movement in terms of degrees of a circle.
   // 1 hr = 360/12 degrees
@@ -22,9 +22,9 @@ function runClock() {
   let secPosition = sec * 360 / 60;
 
   //set the transform values to rotate the hands.
-  HOURHAND.style.transform = "rotate(" + hrPosition + "deg)";
-  MINUTEHAND.style.transform = "rotate(" + minPosition + "deg)";
-  SECONDHAND.style.transform = "rotate(" + secPosition + "deg)";
+  HOURHAND.style.transform = 'rotate(' + hrPosition + 'deg)';
+  MINUTEHAND.style.transform = 'rotate(' + minPosition + 'deg)';
+  SECONDHAND.style.transform = 'rotate(' + secPosition + 'deg)';
 }
 
 var interval = setInterval(runClock, 1000);
